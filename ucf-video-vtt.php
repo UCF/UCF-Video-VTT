@@ -17,6 +17,7 @@ namespace UCF\Video_VTT {
 
 	require_once UCF_VIDEO_VTT__PLUGIN_PATH . '/includes/common.php';
 	require_once UCF_VIDEO_VTT__PLUGIN_PATH . '/includes/api.php';
+	require_once UCF_VIDEO_VTT__PLUGIN_PATH . '/includes/tools.php';
 
 	// This plugin depends on ACF, so all actions are added after
 	// plugins are loaded.
