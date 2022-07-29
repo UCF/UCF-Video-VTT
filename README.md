@@ -1,28 +1,21 @@
-=== UCF Video VTT Tools ===
-Contributors: ucfwebcom
-Requires at least: 5.2
-Tested up to: 5.9
-Stable tag: 0.1.0
-Requires PHP: 7.4
-License: GPLv3 or later
-License URI: http://www.gnu.org/copyleft/gpl-3.0.html
+# UCF Video VTT Tools #
 
 Plugin that provides a series of tools for developers to properly enqueue descriptive text tracks for videos (vtt files) for their videos.
 
 
-== Description ==
+## Description ##
 
 The primary goal of this project is to provide a series of tools for including
 
 
-== Documentation ==
+## Documentation ##
 
 Head over to the [UCF Video VTT Tools wiki](https://github.com/UCF/UCF-Video-VTT/wiki) for detailed information about this plugin, installation instructions, and more.
 
 
-== Changelog ==
+## Changelog ##
 
-= 0.1.0 =
+### 0.1.0 ###
 * Initial release of the plugin.
 * Includes a field for setting a custom vtt file for a video.
 * Generates a vtt using the video description field if no custom file is provided.
@@ -30,20 +23,20 @@ Head over to the [UCF Video VTT Tools wiki](https://github.com/UCF/UCF-Video-VTT
 * Provides helper classes that will insert the appropriate markup to point to the vtt file.
 
 
-== Upgrade Notice ==
+## Upgrade Notice ##
 
 n/a
 
 
-== Development ==
+## Development ##
 
 [Enabling debug mode](https://codex.wordpress.org/Debugging_in_WordPress) in your `wp-config.php` file is recommended during development to help catch warnings and bugs.
 
-= Requirements =
+### Requirements ###
 * node v16+
 * gulp-cli
 
-= Instructions =
+### Instructions ###
 1. Clone the UCF-Video-VTT repo into your local development environment, within your WordPress installation's `plugins/` directory: `git clone https://github.com/UCF/UCF-Video-VTT.git`
 2. `cd` into the new UCF-Video-VTT directory, and run `npm install` to install required packages for development into `node_modules/` within the repo
 3. Optional: If you'd like to enable [BrowserSync](https://browsersync.io) for local development, or make other changes to this project's default gulp configuration, copy `gulp-config.template.json`, make any desired changes, and save as `gulp-config.json`.
@@ -55,10 +48,10 @@ n/a
 4. If you haven't already done so, create a new WordPress site on your development environment to test this plugin against, and [install and activate all plugin dependencies](https://github.com/UCF/UCF-Video-VTT/wiki/Installation#installation-requirements).
 5. Activate this plugin on your development WordPress site.
 
-= Other Notes =
+### Other Notes ###
 * This plugin's README.md file is automatically generated. Please only make modifications to the README.txt file, and make sure the `gulp readme` command has been run before committing README changes.  See the [contributing guidelines](https://github.com/UCF/UCF-Video-VTT/blob/master/CONTRIBUTING.md) for more information.
 
 
-== Contributing ==
+## Contributing ##
 
 Want to submit a bug report or feature request?  Check out our [contributing guidelines](https://github.com/UCF/UCF-Video-VTT/blob/master/CONTRIBUTING.md) for more information.  We'd love to hear from you!
