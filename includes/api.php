@@ -23,15 +23,17 @@ namespace UCF\VIDEO_VTT\API {
 			$retval = wp_remote_retrieve_body( $response );
 		} else {
 			$video_meta = get_post_meta( $video_id, '_wp_attachment_metadata', true );
-			$length = $video_meta['length_formatted'] . '.000';
+
+			$start_time = \DateTime::createFromFormat( "i:s.v", "00:00.000" );
+			$end_time = \DateTime::createFromFormat( "i:s", str_pad( $video_meta['length_formatted'], 5, "0", STR_PAD_LEFT ) );
 
 			ob_start();
 ?>
 WEBVTT
 
-0:00.000 --> <?php echo $length; ?>
+<?php echo $start_time->format('i:s.v'); ?> --> <?php echo $end_time->format('i:s.v'); ?>
 
-<v Audio Descriptions><?php echo $media->post_content; ?>
+- <?php echo $media->post_content; ?>
 <?php
 			$retval = ob_get_clean();
 		}

@@ -68,7 +68,7 @@ namespace UCF\Video_Vtt\Tools {
 		) :
 			$api_url = get_vtt_api_endpoint( $media_id );
 		?>
-			<track default kind="descriptions" src="<?php echo $api_url; ?>" />
+			<track label="Descriptive Text" kind="descriptions" src="<?php echo $api_url; ?>" srclang="en" default />
 		<?php
 
 		endif;
