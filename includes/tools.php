@@ -52,18 +52,20 @@ namespace UCF\Video_Vtt\Tools {
 	 *
 	 * @author Jim Barnes
 	 * @since  0.1.0
-	 * @param  int $media_id The ID of the video attachment
+	 * @param  int|string $media_id The ID or URL of the video attachment
 	 * @return void
 	 */
 	function get_track_markup( $media_id ) {
+		if ( ! is_int( $media_id ) ) {
+			$media_id = attachment_url_to_postid( $media_id );
+		}
+
 		ob_start();
 
 		if (
 			is_int( $media_id ) &&
-			is_attachment( $media_id ) &&
 			video_has_description( $media_id )
 		) :
-
 			$api_url = get_vtt_api_endpoint( $media_id );
 		?>
 			<track default kind="descriptions" src="<?php echo $api_url; ?>" />
