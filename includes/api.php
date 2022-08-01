@@ -33,7 +33,7 @@ WEBVTT
 
 <?php echo $start_time->format('i:s.v'); ?> --> <?php echo $end_time->format('i:s.v'); ?>
 
-- <?php echo $media->post_content; ?>
+<?php echo $media->post_content; ?>
 <?php
 			$retval = ob_get_clean();
 		}
