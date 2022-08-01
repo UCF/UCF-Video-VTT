@@ -31,7 +31,7 @@ WEBVTT
 
 0:00.000 --> <?php echo $length; ?>
 
-- <?php echo $media->post_content; ?>
+<v Audio Descriptions><?php echo $media->post_content; ?>
 <?php
 			$retval = ob_get_clean();
 		}
