@@ -1,0 +1,8 @@
+{
+    "name": "ucf/ucf-video-vtt",
+    "description": "Plugin that provides a series of tools for developers to properly enqueue descriptive text tracks for videos (vtt files) for their videos.",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

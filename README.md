@@ -15,6 +15,10 @@ Head over to the [UCF Video VTT Tools wiki](https://github.com/UCF/UCF-Video-VTT
 
 ## Changelog ##
 
+### 0.1.1 ###
+Enhancements:
+* Added composer file.
+
 ### 0.1.0 ###
 * Initial release of the plugin.
 * Includes a field for setting a custom vtt file for a video.
